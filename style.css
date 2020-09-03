@@ -1,0 +1,58 @@
+body{
+	padding:0px;
+	margin: 0px;
+	background-color: #2F2F2F;
+}
+header{
+	background-color: rgb(255,97,86);
+	padding:15px;
+	margin:0px;
+	text-align: center;
+}
+header h1{
+	font-family: 'Lato';
+	font-size: 50px;
+	color:white;
+}
+h1{
+	font-family: 'Lato';
+	color:white;
+}
+h2{
+	font-family: 'Lato';
+	color:white;
+}
+button{
+	background-color: rgb(255,97,86);
+	font-family: 'Alata';
+	padding: 10px;
+	color: white;
+	border-style: solid;
+	border-color:white;
+	font-size: 20px;
+	cursor: pointer;
+	transition: 0.75s;
+}
+button:hover{
+	background-color:white;
+	font-family: 'Alata';
+	padding: 10px;
+	color:rgb(255,97,86);
+	border-style: solid;
+	border-color:rgb(255,97,86);
+	font-size: 20px;
+	cursor: pointer;
+	transition: 0.75s;
+}
+input[type=text]{
+	padding:10px;
+	font-family: 'Alata';
+	font-size: 20px;
+	border-style: none;
+}
+input[type=password]{
+	padding:10px;
+	font-family: 'Alata';
+	font-size: 20px;
+	border-style: none;
+}

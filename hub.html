@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>LWHY</title>
+    <link href="/main/style.css" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css2?family=Alata&family=Lato:wght@900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/main/emoticons/favicon.ico">
+  </head>
+  <body onload="setDivPosts()">
+		<header>
+		<h1>LWHY</h1>
+		</header>
+		<center>
+      <br>
+      <div style="background-color:lightgrey;width: 90%;border-radius: 20px;padding:1px;"><h2 style="cursor: pointer;color:black;display:inline-block;" onclick="setDivPosts()">Posts |</h2><h2 style="cursor: pointer;color:black;display:inline-block;" onclick="setDivSettings()">| Settings |</h2><h2 style="cursor: pointer;color:black;display:inline-block;" onclick="setDivProfile()">| Profile</h2></div>
+			<div id="everything">
+      </div>
+		</center>
+		<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js">
+		</script>
+		<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js">
+		</script>
+		<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js">
+		</script>
+		</script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js">
+		</script>
+		<script>
+			var firebaseConfig = {
+    		apiKey: "AIzaSyAWWCBbelGKvKpoeuQIOuLX1Z-VU1kwwZ4",
+    		authDomain: "lwhy-60feb.firebaseapp.com",
+    		databaseURL: "https://lwhy-60feb.firebaseio.com",
+    		projectId: "lwhy-60feb",
+    		storageBucket: "lwhy-60feb.appspot.com",
+    		messagingSenderId: "537877599957",
+    		appId: "1:537877599957:web:3ecc345154c951d06af45c"
+  		};
+  		firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+      if(!(localStorage.getItem("userToken"))){
+        location = "index.html";
+      }
+		</script>
+		<script src="/main/script.js"></script>
+  </body>
+</html>
